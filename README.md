@@ -21,3 +21,9 @@ The details page should contain a "Share" button that uses the [Web Share API](h
 - User can also navigate directly to the details page via a URL.
 - User can share the URL of the details page by clicking a button to open a native sharing dialog.
 - Error, loading and empty states are handled.
+
+# Getting started
+1. Install the version of Node specified in the `.nvmrc` file.
+2. Install the NPM packages.
+3. Start the development server by running `npm start` — This will spawn a development server with a default port of `5173`.
+4. Open the app on http://localhost:5173/
