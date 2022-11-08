@@ -1,5 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import Search from "./Search";
+import Person from "./Person";
+
+const Router = () => (
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Search/>} />
+      <Route path="person/:personId" element={<Person/>} />
+    </Routes>
+  </BrowserRouter>
+);
+
+ReactDOM.render(<Router />, document.getElementById("root"));
